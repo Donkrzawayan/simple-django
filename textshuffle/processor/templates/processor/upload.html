@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Prześlij plik tekstowy</h2>
-  <form method="post" enctype="multipart/form-data">
+  <h2 class="mb-3">Upload a Text File</h2>
+  <form method="post" enctype="multipart/form-data" class="mb-3">
     {% csrf_token %}
-    <input type="file" name="textfile" accept=".txt" required><br><br>
-    <button type="submit">Wyślij</button>
+    <div class="mb-3">
+      <input type="file" class="form-control" name="textfile" accept=".txt" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 {% endblock %}

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Text Shuffle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <div>
-        <h1>Text Shuffle</h1>
-        {% block content %}{% endblock %}
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 bg-white rounded shadow p-4">
+                <h1 class="text-center mb-4">Text Shuffle</h1>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
     </div>
 </body>
 </html>
